@@ -66,3 +66,7 @@ console.log("list of company in uppercase");
 for (let index = 0; index < itCompanies.length; index++) {
   console.log(itCompanies[index].toUpperCase());
 }
+
+// No 12
+const companyNames = itCompanies.join(", ");
+console.log(`company names = ${companyNames}`);
