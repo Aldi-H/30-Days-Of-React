@@ -60,3 +60,9 @@ console.log("list of company names");
 for (let index = 0; index < itCompanies.length; index++) {
   console.log(itCompanies[index]);
 }
+
+// No 11
+console.log("list of company in uppercase");
+for (let index = 0; index < itCompanies.length; index++) {
+  console.log(itCompanies[index].toUpperCase());
+}
