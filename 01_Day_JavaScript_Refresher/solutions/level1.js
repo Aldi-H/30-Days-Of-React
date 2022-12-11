@@ -70,3 +70,49 @@ for (let index = 0; index < itCompanies.length; index++) {
 // No 12
 const companyNames = itCompanies.join(", ");
 console.log(`company names = ${companyNames}`);
+
+// No 13
+const companyExist = itCompanies.includes("Facebook");
+companyExist
+  ? console.log("company exist")
+  : console.log("company does not exist");
+
+// No 14
+console.log("companies have one or more 'o' without the filter method");
+for (let index = 0; index < itCompanies.length; index++) {
+  const company = itCompanies[index];
+  if (company.includes("o")) console.log(company);
+}
+
+// No 15
+const sortCompany = itCompanies.sort();
+console.log(`sorted company = ${sortCompany}`);
+
+// No 16
+const reverseCompany = itCompanies.sort();
+console.log(`reversed company = ${reverseCompany}`);
+
+// No 17
+const sliceThreeCompany = itCompanies.slice(0, 3);
+console.log(`first three companies = ${sliceThreeCompany}`);
+
+// No 18
+const sliceLastThreeCompany = itCompanies.slice(itCompanies.length - 3);
+console.log(`last three companies = ${sliceLastThreeCompany}`);
+
+// No 20
+const removeFirstCompany = itCompanies.shift();
+console.log(`removed first company = ${removeFirstCompany}`);
+
+// No 21
+const removeLastCompany = itCompanies.pop();
+console.log(`removed last company = ${removeLastCompany}`);
+
+// No 22
+const removeCompany = itCompanies.splice(2, 1);
+console.log(`removed company = ${removeCompany}`);
+
+// No 23
+
+const removeAllCompany = itCompanies.splice(0, itCompanies.length);
+console.log(`removed all companies = ${removeAllCompany}`);
